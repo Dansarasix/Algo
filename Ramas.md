@@ -45,3 +45,86 @@ git checkout -b nombre_rama
 git diff nombre_rama...nombre_rama
 
 ~~~
+
+6. Ver ramas idénticas a la actual
+
+~~~
+
+git branch --merged
+
+~~~
+
+7. Renombrar ramas
+
+~~~
+
+git branch -m nombre_antiguo nombre_nuevo
+
+~~~
+
+8. Eliminar ramas
+
+~~~
+
+git branch -d nombre_rama
+git branch -D nombre_rama
+
+~~~
+
+9. Integrar ramas a la actual
+
+~~~
+
+git merge nombre_rama
+
+~~~
+
+10. Resolver conflictos (de forma manual)
+
+~~~
+
+git merge --abort
+
+~~~
+
+11. Almacenar cambios temporales
+
+~~~
+
+git stash save "Mensaje"
+
+~~~
+
+12. Listar cambios
+
+~~~
+
+git stash list
+
+~~~
+
+13. Ver contenido de un cambio temporal
+
+~~~
+
+git stash show -p nombre_stash
+
+~~~
+
+14. Eliminar cambio temporal
+
+~~~
+
+git stash drop nombre_stash
+
+~~~
+
+15. Aplicar cambio del *stash*
+
+~~~
+
+git stash apply nombre_stash
+git stash pop nombre_stash
+
+~~~
+
